@@ -15,7 +15,7 @@ from tg_bot.modules.helper_funcs.filters import CustomFilters
 
 
 CoffeeHouseAPI = API(AI_API_KEY)
-api_client = LydiaAI(CoffeeHouseAPI_KEY)
+api_client = LydiaAI(CoffeeHouseAPI)
 
 
 @run_async
