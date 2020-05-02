@@ -15,7 +15,7 @@ REPORT_GROUP = 5
 REPORT_IMMUNE_USERS = SUDO_USERS + TIGER_USERS
 import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
-                    level=logging.INFO)
+                    level=logging.DEBUG)
 
 @run_async
 @user_admin
@@ -151,7 +151,7 @@ NOTE: Neither of these will get triggered if used by admins.
 """
 
 SETTING_HANDLER = CommandHandler("reports", report_setting, pass_args=True)
-REPORT_HANDLER = CommandHandler("report", report, filters=Filters.group)
+REPORT_HANDLER = CommandHandler("report", report)
 ADMIN_REPORT_HANDLER = RegexHandler("(?i)@admin(s)?", report)
 
 dispatcher.add_handler(SETTING_HANDLER)
