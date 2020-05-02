@@ -15,7 +15,7 @@ REPORT_GROUP = 5
 REPORT_IMMUNE_USERS = SUDO_USERS + TIGER_USERS
 import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
-                    level=logging.ERROR)
+                    level=logging.INFO)
 
 @run_async
 @user_admin
@@ -58,9 +58,9 @@ def report(bot: Bot, update: Update) -> str:
     message = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
-
+    print(1)
     if chat and message.reply_to_message and sql.chat_should_report(chat.id):
-
+        print(0)
         reported_user = message.reply_to_message.from_user
         chat_name = chat.title or chat.first or chat.username
         admin_list = chat.get_administrators()
