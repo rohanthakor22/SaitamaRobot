@@ -137,7 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text("Yo, I Am Here :)")
 
 
 # for test purposes
