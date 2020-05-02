@@ -13,7 +13,9 @@ from tg_bot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
 REPORT_IMMUNE_USERS = SUDO_USERS + TIGER_USERS
-
+import logging
+logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
+                    level=logging.ERROR)
 
 @run_async
 @user_admin
