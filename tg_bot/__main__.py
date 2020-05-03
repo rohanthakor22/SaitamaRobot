@@ -21,7 +21,15 @@ Hi {}, my name is {}!
 
 I am an Anime themed group management bot.
 
+You know how hard it is sometimes to manage group so here is the solution for you
+
+Join My [Support Group](t.me/spiderbotsupport) For Chit Chat About How I Am &
+Join My [Updates Channel](t.me/SpiderMan_Updates) For U Can Know My New Updates & Fixes
+
+Don't Forget To Check out [Super MarioMario](t.me/SupMario_bot) 
+
 To add me to your group click ["HERE"](t.me/SaitamaRobot?startgroup=botstart)
+
 You can find my list of available commands with /help.
 
 The support group chat is at {}.
