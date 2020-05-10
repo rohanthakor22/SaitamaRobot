@@ -21,14 +21,18 @@ Hi {}, my name is {}!
 
 I am an Anime themed group management bot.
 
+Made With Love  And Maintained By This [Awesome Person](t.me/WorldTrust) ❤
+
+Special Thanks To [This Noob🥰](t.me/Spyder_xD) 
+
+
 You know how hard it is sometimes to manage group so here is the solution for you
 
-Join My [Support Group](t.me/spiderbotsupport) For Chit Chat About How I Am &
-Join My [Updates Channel](t.me/SpiderMan_Updates) For U Can Know My New Updates & Fixes
+Join My [Support Group](t.me/shizukasupportgrp) For Chit Chat About How I Am
 
-Don't Forget To Check out [Super MarioMario](t.me/SupMario_bot) 
+Don't Forget To Check out [SpiderMan](t.me/Spiderman_probot) 
 
-To add me to your group click ["HERE"](t.me/SaitamaRobot?startgroup=botstart)
+To add me to your group click [*HERE*](t.me/ShizukaGirlBot?startgroup=botstart)
 
 You can find my list of available commands with /help.
 
