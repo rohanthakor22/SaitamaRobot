@@ -1,38 +1,55 @@
 import importlib
+
 import re
+
 from typing import Optional, List
 
 from telegram import Bot, Update, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
+
 from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError
+
 from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, Filters
+
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop
+
 from telegram.utils.helpers import escape_markdown
 
 from tg_bot import dispatcher, updater, TOKEN, WEBHOOK, OWNER_ID, SUPPORT_CHAT, DONATION_LINK, CERT_PATH, PORT, URL, LOGGER, \
+
     ALLOW_EXCL
+
 # needed to dynamically load modules
+
 # NOTE: Module order is not guaranteed, specify that in the config file!
+
 from tg_bot.modules import ALL_MODULES
+
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
+
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
+
 Hi {}, my name is {}! 
 
 I am an Anime themed group management bot.
 
+Made With Love  And Maintained By This [Awesome Person](t.me/WorldTrust) ❤
+
+Special Thanks To [This Noob🥰](t.me/Spyder_xD) 
+
 You know how hard it is sometimes to manage group so here is the solution for you
 
-Join My [Support Group](t.me/spiderbotsupport) For Chit Chat About How I Am &
-Join My [Updates Channel](t.me/SpiderMan_Updates) For U Can Know My New Updates & Fixes
+Join My [Support Group](t.me/shizukasupportgrp) For Chit Chat About How I Am
 
-Don't Forget To Check out [Super MarioMario](t.me/SupMario_bot) 
+Don't Forget To Check out [SpiderMan](t.me/Spiderman_probot) 
 
-To add me to your group click ["HERE"](t.me/SaitamaRobot?startgroup=botstart)
+To add me to your group click [*HERE*](t.me/ShizukaGirlBot?startgroup=botstart)
 
 You can find my list of available commands with /help.
 
 The support group chat is at {}.
+
 """
 
 HELP_STRINGS = """
