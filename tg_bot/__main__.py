@@ -32,7 +32,7 @@ PM_START_TEXT = """
 
 Hi {}, my name is {}! 
 
-I am an Anime themed group management bot.
+I am an Python Based group management bot With Awesome Features ❤.
 
 Made With Love  And Maintained By This [Awesome Person](t.me/WorldTrust) ❤
 
